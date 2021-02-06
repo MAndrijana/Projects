@@ -1,0 +1,378 @@
+             .bg-color {
+                 background-color: #FCD232;
+             }
+             
+             .logo {
+                 width: 38px;
+             }
+             
+             figcaption {
+                 font-size: 12px;
+                 font-weight: bold !important;
+             }
+             
+             .navbar {
+                 padding: 30px 50px 30px 80px !important;
+             }
+             
+             .btn-color {
+                 background-color: #FF1300 !important;
+                 font-weight: bold !important;
+                 opacity: 1;
+                 transition: 0.3s;
+             }
+             
+             .btn-color:hover {
+                 opacity: 0.6;
+             }
+             
+             .nav-link {
+                 font-weight: bold !important;
+                 color: #302F38;
+             }
+             
+             .nav-link:hover {
+                 color: red !important;
+                 border-bottom: 1px solid red;
+                 border-top: 1px solid red;
+             }
+             
+             .btn:focus {
+                 box-shadow: none !important;
+             }
+             
+             .bg-image {
+                 background-image: url("images/img6.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 background-attachment: fixed;
+                 height: 70vh;
+             }
+             
+             .bg-image:hover {
+                 background-image: url("images/img4.jpg");
+                 background-size: cover;
+                 background-position: center;
+                 height: 70vh;
+             }
+             
+             .dark {
+                 background-color: rgba(0, 0, 0, 0.5);
+                 height: 70vh;
+             }
+             
+             .naslov {
+                 font-weight: bold;
+                 font-size: 50px;
+             }
+             
+             .naslov:hover {
+                 transform: scale(1.5);
+                 transition: transform .2s;
+             }
+             
+             .container {
+                 display: block;
+                 position: relative;
+                 cursor: pointer;
+                 padding: 0 !important;
+                 margin: 0 !important;
+             }
+             
+             .container input {
+                 position: absolute;
+                 opacity: 0;
+                 cursor: pointer;
+                 height: 0;
+                 width: 0;
+             }
+             
+             .checkmark {
+                 position: absolute;
+                 top: 50%;
+                 right: 0;
+                 transform: translateY(-50%);
+                 height: 35px;
+                 width: 35px;
+                 border-radius: 50%;
+             }
+             
+             .bg-project:hover input~.checkmark {
+                 background-color: #302F38;
+             }
+             
+             .checkmark:after {
+                 content: "";
+                 position: absolute;
+                 display: none;
+             }
+             
+             .container input:checked~.checkmark:after {
+                 display: block;
+             }
+             
+             .container .checkmark:after {
+                 right: 11px;
+                 top: 0px;
+                 width: 12px;
+                 height: 25px;
+                 border: solid #EB3B3B;
+                 border-width: 0 3px 3px 0;
+                 -webkit-transform: rotate(45deg);
+                 -ms-transform: rotate(45deg);
+                 transform: rotate(45deg);
+             }
+             
+             .bg-project:hover {
+                 background-color: #EB3B3B;
+                 color: #302F38 !important;
+                 cursor: pointer;
+             }
+             
+             .bg-project {
+                 background-color: #302F38;
+                 color: white;
+                 padding: 40px 30px !important;
+                 font-size: 20px;
+             }
+             
+             .bg-footer {
+                 background-color: #302F38;
+             }
+             
+             .card-title {
+                 background-color: #FCD232;
+                 font-weight: bold;
+                 font-size: 13px;
+             }
+             
+             .card {
+                 border: 0 !important;
+                 border-radius: 10px !important;
+                 transition: transform .2s;
+                 box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.75);
+             }
+             
+             .card:hover {
+                 transform: scale(1.1);
+                 transition: 0.3s;
+             }
+             
+             .card-img-top {
+                 border-top-left-radius: 10px !important;
+                 border-top-right-radius: 10px !important;
+             }
+             
+             .name-of-project {
+                 font-size: 18px;
+                 font-weight: bold !important;
+             }
+             
+             .description {
+                 font-size: 14px;
+             }
+             
+             .month {
+                 font-size: 10px;
+                 font-weight: bold;
+             }
+             
+             .btn-card {
+                 background-color: red !important;
+                 font-weight: bold !important;
+             }
+             
+             .card-link {
+                 color: black;
+             }
+             
+             .icon-footer {
+                 color: red;
+                 filter: drop-shadow(0 0 3px rgba(233, 158, 158, 0.9));
+             }
+             
+             .text-footer,
+             .cards-naslov,
+             .form-naslov {
+                 font-weight: bold;
+             }
+             
+             .cards-naslov,
+             .form-naslov {
+                 text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+                 color: white;
+             }
+             
+             .padding {
+                 padding-bottom: 70px;
+             }
+             
+             .forma {
+                 font-style: italic;
+             }
+             
+             label {
+                 font-weight: bold;
+             }
+             
+             .bg-formi {
+                 background-color: #F7CE31;
+             }
+             
+             .vraboti {
+                 padding: 120px 0px;
+             }
+             
+             .form-bottom {
+                 padding-bottom: 250px;
+             }
+             
+             .sidebar {
+                 height: 100%;
+                 width: 0;
+                 position: fixed;
+                 z-index: 1;
+                 top: 0;
+                 right: 0;
+                 background-color: #302F38;
+                 overflow-x: hidden;
+                 transition: 0.5s;
+                 padding-top: 80px;
+             }
+             
+             .link {
+                 padding: 25px 8px 8px 15px;
+                 text-decoration: none;
+                 font-size: 18px;
+                 color: white;
+                 display: block;
+                 transition: 0.3s;
+                 font-weight: bold;
+             }
+             
+             .closebtn {
+                 text-decoration: none;
+                 font-size: 20px;
+                 color: white;
+             }
+             
+             .sidebar a:hover {
+                 color: #f1f1f1;
+                 text-decoration: none;
+             }
+             
+             .sidebar .closebtn {
+                 position: absolute;
+                 top: 0;
+                 right: 15px;
+                 font-size: 40px;
+             }
+             
+             .openbtn {
+                 font-size: 45px;
+                 cursor: pointer;
+                 color: #302F38;
+                 border: none;
+                 background-color: transparent;
+             }
+             
+             #main span {
+                 display: flex;
+                 height: 4px;
+                 margin-bottom: 5px;
+                 background: #302F38;
+                 border-radius: 3px;
+             }
+             
+             #main span:first-child {
+                 width: 30px;
+             }
+             
+             #main span:nth-child(2) {
+                 width: 20px;
+             }
+             
+             #main span:nth-child(3) {
+                 width: 10px;
+             }
+             
+             #load-more {
+                 display: none;
+             }
+             
+             .main-span {
+                 transform: perspective(400px) scaleX(-1);
+             }
+             
+             .select-box {
+                 position: relative;
+                 display: flex;
+                 width: 100%;
+                 flex-direction: column;
+             }
+             
+             .select-box .options-container {
+                 max-height: 0;
+                 width: 100%;
+                 opacity: 0;
+                 transition: all 0.4s;
+                 overflow: hidden;
+                 order: 1;
+             }
+             
+             .selected {
+                 background-color: white;
+                 border-radius: 4px;
+                 margin-bottom: 4px;
+                 color: black;
+                 font-weight: bold !important;
+                 border: 1px solid transparent;
+                 position: relative;
+                 order: 0;
+             }
+             
+             .select-box .options-container.active {
+                 background-color: white;
+                 max-height: 258px;
+                 opacity: 1;
+                 border: 1px solid transparent;
+                 margin-top: 10px;
+                 border-radius: 4px;
+             }
+             
+             .select-box .option .radio {
+                 display: none;
+             }
+             
+             .options-container {
+                 box-shadow: -1px 5px 12px 0px rgba(0, 0, 0, 0.3);
+             }
+             
+             @media (max-width: 768px) {
+                 .navbar {
+                     padding: 10px 15px !important;
+                 }
+                 .vraboti {
+                     padding: 50px 0px !important;
+                 }
+                 .bg-project {
+                     padding: 40px 13px !important;
+                 }
+                 .container {
+                     font-size: 25px;
+                 }
+                 .cards {
+                     display: none;
+                 }
+                 .cards:nth-of-type(1),
+                 .cards:nth-of-type(2),
+                 .cards:nth-of-type(3),
+                 .cards:nth-of-type(4),
+                 .cards:nth-of-type(5),
+                 .cards:nth-of-type(6) {
+                     display: inline-block;
+                 }
+                 #load-more {
+                     display: block;
+                 }
+             }

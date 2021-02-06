@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Andrijana Mircevska" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-color">
+
+        <a class="navbar-brand mr-0 text-center" href="index.html">
+            <img src="images/logo.png" alt="brainster" class="logo">
+            <figcaption class="text-dark text-uppercase">brainster</figcaption>
+
+        </a>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://marketpreneurs.brainster.co/" target="_blank" class="link">Академија за маркетинг</a>
+            <a href="http://codepreneurs.co/" target="_blank" class="link">Академија за програмирање</a>
+            <a href="https://datascience.brainster.co/" target="_blank" class="link">Академија за data science</a>
+            <a href="https://design.brainster.co/" target="_blank" class="link">Академија за дизајн</a>
+            <a href="vraboti-nash-student.html" class="link"><button type="button" class="btn btn-color my-2 my-sm-0 text-white">Вработи наш студент</button></a>
+        </div>
+
+        <div id="main">
+            <button class="openbtn d-lg-none d-block" onclick="openNav()">
+                <div class="main-span">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto mr-4">
+                <li class="nav-item">
+
+                    <a class="nav-link mr-5 px-0" href="https://marketpreneurs.brainster.co/" target="_blank">Академија за маркетинг<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5 px-0" href="http://codepreneurs.co/" target="_blank">Академија за програмирање</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5 px-0" href="https://datascience.brainster.co/" target="_blank">Академија за data science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5 px-0" href="https://design.brainster.co/" target="_blank">Академија за дизајн</a>
+                </li>
+            </ul>
+
+            <a href="vraboti-nash-student.html"><button type="button" class="btn btn-color my-2 my-sm-0 text-white">Вработи наш студент</button></a>
+
+        </div>
+
+
+    </nav>
+    <!-- Formi-Vraboti studenti -->
+    <div class="container-fluid bg-formi">
+        <div class="row vraboti">
+            <div class="col text-center">
+                <h1 class="form-naslov">Вработи студенти</h1>
+            </div>
+        </div>
+        <div class="row form-bottom">
+            <div class="col-lg-8 offset-lg-2">
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 col-12">
+                                <label for="Name">Име и презиме</label>
+                                <input type="text" id="Name" class="form-control form-control-lg forma" placeholder="Вашето име и презиме" name="name" onkeypress="return /[a-z]/i.test(event.key)">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label for="Company">Име на компанија</label>
+                                <input type="text" id="Company" class="form-control form-control-lg  forma" placeholder="Име на вашата компанија" name="company_name" onkeypress="return /[a-z]/i.test(event.key)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-6 col-12">
+                                <label for="Email">Контакт имејл</label>
+                                <input type="email" id="Email" class="form-control form-control-lg forma" placeholder="Контакт имејл на вашата компанија" name="contact">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label for="Phone">Контакт телефон</label>
+                                <input type="tel" id="Phone" class="form-control form-control-lg forma" placeholder="Контакт телефон на вашата компанија" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" name="tel">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Тип на студенти</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 col-12">
+
+                            <div class="select-box" id="select-box">
+                                <div class="options-container">
+                                    <div class="option border-bottom pl-3">
+                                        <input type="radio" class="radio" id="marketing" />
+                                        <label for="marketing" class="mb-0 py-2">Студенти од маркетинг</label>
+                                    </div>
+                                    <div class="option border-bottom pl-3">
+                                        <input type="radio" class="radio" id="programiranje" />
+                                        <label for="programiranje" class="mb-0 py-2">Студенти од програмирање</label>
+                                    </div>
+                                    <div class="option border-bottom pl-3">
+                                        <input type="radio" class="radio" id="science" />
+                                        <label for="science" class="mb-0 py-2">Студенти од data science</label>
+                                    </div>
+                                    <div class="option pl-3">
+                                        <input type="radio" class="radio" id="dizajn" />
+                                        <label for="dizajn" class="mb-0 py-2">Студенти од дизајн</label>
+                                    </div>
+                                </div>
+                                <div class="selected form-control form-control-lg d-flex justify-content-between align-items-center">
+                                    Изберете тип на студент<i class="fas fa-angle-down"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 mt-md-0 mt-5">
+                            <button type="submit" class="btn btn-color btn-block btn-lg text-white">ИСПРАТИ</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid">
+        <div class="row bg-footer">
+            <div class="col text-center py-3">
+                <p class="text-white mb-0 text-footer">Изработено со <i class="fas fa-heart icon-footer"></i> од студентите на Brainster</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Latest Font-Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js "></script>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+
+    <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["name"].value,
+                y = document.forms["myForm"]["company_name"].value,
+                z = document.forms["myForm"]["contact"].value,
+                k = document.forms["myForm"]["tel"].value;
+
+
+
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            } else if (y == "") {
+                alert("Company name must be filled out");
+                return false;
+            } else if (z == "") {
+                alert("Email must be filled out");
+                return false;
+            } else if (k == "") {
+                alert("Telephone number must be filled out");
+                return false;
+            } else if (!document.getElementById("marketing").checked && !document.getElementById("programiranje").checked &&
+                !document.getElementById("science").checked && !document.getElementById("dizajn").checked) {
+                alert("Type of students must be filled out");
+                return false;
+            } else {
+                alert("Good work");
+
+            }
+        }
+    </script>
+    <script>
+        const selected = document.querySelector(".selected");
+        const optionsContainer = document.querySelector(".options-container");
+        const optionsList = document.querySelectorAll(".option");
+        selected.addEventListener("click", () => {
+            optionsContainer.classList.toggle("active");
+        });
+        optionsList.forEach(o => {
+            o.addEventListener("click", () => {
+                selected.innerHTML = o.querySelector("label").innerHTML;
+                optionsContainer.classList.remove("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
