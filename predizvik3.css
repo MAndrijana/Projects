@@ -1,0 +1,264 @@
+body, h2{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color:rgba(39, 40, 51, 0.85);
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+header a{
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    float: right;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.nav button{
+    color:white;
+    background-color:red;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: right;
+}
+.text p{
+    font-size: 18px;
+}
+ header i{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+}
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.car1{
+    background-image: url("picture1.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position:relative;
+    background-attachment: fixed;
+}
+.car1-text{
+    background-color:rgba(39, 40, 51, 0.85);
+    height: 50%;
+    border-top: 5px solid red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.car1-text1{
+    padding: 70px 0;
+    color: white;
+}
+.prv h3{
+    margin-top: 4px;
+    font-size: 26px;
+    margin-left: 30px;
+}
+.prv p{
+    font-size: 18px;
+    margin: 0 30px;
+}
+.prv{
+    width: 33.33%;
+    float: left;
+}
+.par, .par1{
+    width: 33.33%;
+    float: left;
+    line-height: 20px;
+    text-align: justify;
+}
+.par p, .par1 p{
+    margin: 0 30px;
+}
+.car1-text1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.car2{
+    background-image: url("picture2.jpeg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.car2-text{
+    background-color:rgba(39, 40, 51, 0.85);
+    height: 100vh;
+    border-left: 5px solid blue;
+    position: absolute;
+    left:70%;
+    top:0;
+    color: white;
+    text-align: justify;
+    padding: 80px 30px;
+    line-height: 25px;
+}
+.car2-text button, .car3-text button{
+    margin-top: 30px;
+    border-radius: 4px;
+    background-color:rgba(39, 40, 51, 0.85);
+    padding: 10px 30px;
+    transition: color .5s ease-out;
+ }
+.car2-text a, .car3-text a{
+    text-decoration: none;
+    color: white;
+}
+.car2-text button:hover, 
+.car3-text button:hover{
+    border: 1px solid green;
+}
+.car3{
+    background-image: url("picture3.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.car3-text{
+    background-color:rgba(39, 40, 51, 0.85);
+    height: 100vh;
+    border-right: 5px solid green;
+    position: absolute;
+    right:70%;
+    top:0;
+    color: white;
+    text-align: justify;
+    padding: 80px 30px;
+    line-height: 25px;
+}
+.section {
+    background-color:rgba(39, 40, 51, 0.85);
+}
+.naslov{
+   padding-top: 30px;
+    padding-bottom: 30px;
+}
+.border{
+    width: 30%;
+    border-bottom: 2px solid red;
+    margin: 0 auto;
+}
+.naslov h2, .naslov p{
+    color: white;
+    text-align: center;
+}
+.icons{
+    text-align: center;
+}
+.icons::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
+    width: 33.33%;
+    float: left;
+    margin-top: 30px;
+}
+.icon1 i, .icon2 i, .icon3 i, .icon4 i, .icon5 i, .icon6 i{
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    color: white;
+}
+.icon1 p, .icon2 p, .icon3 p, .icon4 p, .icon5 p, .icon6 p{
+    text-align: center;
+    color: white;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    margin-top: 50px;
+    color: white;
+    background-color:rgba(39, 40, 51, 0.85);
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.red{
+    background-color: red;
+    padding: 60px;
+    text-align: center;
+}
+.red h2, .red p{
+    color: white;
+}
+.Email input{
+    background-color: transparent;
+    color: white;
+}
+.Submit input{
+    color: red;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 3px 20px;
+    border: none;
+}
+.Email, .Submit{
+    display: inline;
+}
+::placeholder{
+    color: white;
+}
+.Email input:hover{
+    border-color: blue;
+    }
+footer{
+    padding: 50px;
+    background-color:rgba(39, 40, 51, 0.85);
+    text-align: center;
+}
+.icons a{
+    margin-right: 20px;
+    color: white;
+    display: inline-block;
+}
+.icons i{
+    font-size: 30px;
+    color: white;
+}
+.copy p{
+    color: white;
+}
+.copy a{
+    color: white;
+    text-decoration-style:dotted;
+}
+
+
