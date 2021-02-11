@@ -1,0 +1,90 @@
+body, h2{
+margin: 0;
+}
+*{
+box-sizing: border-box;
+}
+.bg{
+    height: 100vh;
+    position: relative;
+    }
+.image1{
+background-image: url("image1.jpg");
+background-size: cover;
+height: 100vh;
+background-position: center;
+background-attachment: fixed;
+opacity: 0.7;
+}
+.box{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+text-transform: uppercase;
+background-color: black;
+padding: 20px;
+}
+.section1{
+padding: 30px;
+}
+.section1 h2, .section1 p{
+text-align: center;
+color: grey;
+}
+.image2{
+background-image: url("image2.jpg");
+background-size: cover;
+height: 100vh;
+background-position: center;
+background-attachment: fixed;
+background-color: white;
+opacity: 0.7;
+}
+.box1{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+text-transform: uppercase;
+}
+.section2{
+background-color: black;
+padding: 30px;
+}
+.section2 h2, .section2 p{
+text-align: center;
+color:white;
+}
+.image3{
+background-image: url("image3.jpg");
+background-size: cover;
+height: 100vh;
+background-position: center;
+background-attachment: fixed;
+background-color: white;
+opacity: 0.7;
+}
+@media (max-width: 425px){
+.image1{
+    background-attachment: scroll;
+}
+
+    .box{
+        top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+        font-size: 12px;   
+      padding: 5px;
+text-align:center;
+       
+    }
+        
+    .box1{
+        font-size: 12px;   
+    }
+    
+}
+
