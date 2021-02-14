@@ -1,0 +1,114 @@
+body {
+    background-color: #e7e7e7;
+    margin: 0 auto;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bgDiv {
+    background-color: #FFFFFF !important;
+}
+
+.nav-link {
+    color: black !important;
+    margin-right: 30px;
+    font-weight: 1000;
+}
+
+.nav-link:hover {
+    color: orange !important;
+    background-color: #d3d3d3;
+   
+}
+
+.h1 {
+    font-size: 60px;
+}
+
+.h4,
+.card-title {
+    font-weight: 800;
+}
+
+.badge {
+    background-color: #d3d3d3 !important;
+    color: #5c5c5c !important;
+}
+
+.icon1,
+.icon2 {
+    font-size: 25px;
+    margin-right: 15px;
+    color: black !important;
+}
+
+.icon1:hover,
+.icon2:hover {
+    color: orange !important;
+}
+
+.card-body {
+    background-color: orange !important;
+}
+
+.card-img-top {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    height: 200px;
+}
+
+.card:hover {
+    border: 2px solid orange !important;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+    transition: ease 0.4s;
+}
+
+.filters a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.colorOrange {
+    color: orange !important;
+}
+
+.bgOrange {
+    background-color: orange !important;
+}
+
+.bolder {
+    font-weight: bold !important;
+    color: orange !important;
+}
+
+.color {
+    background-color: orange !important;
+}
+
+.social-share a {
+    color: white !important;
+    background-color: orange !important;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.social-share a:hover {
+    background-color: grey !important;
+}
+
+.social-media {
+    background-color: #f8f8f8 !important;
+}
+
+.footer-paragraph a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.footer-paragraph a:hover {
+    color: orange !important;
+}

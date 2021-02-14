@@ -2,634 +2,152 @@
 <html>
 
 <head>
-    <title>Document</title>
-    <meta charset="utf-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="Andrijana Mircevska" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
-
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript">
+    <meta name="description" content="Bikes">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Font-awesome 5 cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-color">
-
-        <a class="navbar-brand mr-0 text-center" href="index.html">
-            <img src="images/logo.png" alt="brainster" class="logo">
-            <figcaption class="text-dark text-uppercase">brainster</figcaption>
-
-        </a>
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="https://marketpreneurs.brainster.co/" target="_blank" class="link">Академија за маркетинг</a>
-            <a href="http://codepreneurs.co/" target="_blank" class="link">Академија за програмирање</a>
-            <a href="https://datascience.brainster.co/" target="_blank" class="link">Академија за data science</a>
-            <a href="https://design.brainster.co/" target="_blank" class="link">Академија за дизајн</a>
-            <a href="vraboti-nash-student.html" class="link"><button type="button" class="btn btn-color my-2 my-sm-0 text-white">Вработи наш студент</button></a>
-        </div>
-
-        <div id="main">
-            <button class="openbtn d-lg-none d-block" onclick="openNav()">
-                <div class="main-span">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse">
-
-            <ul class="navbar-nav ml-auto mr-4">
-                <li class="nav-item link-7">
-
-                    <a class="nav-link mr-5 px-0" href="https://marketpreneurs.brainster.co/" target="_blank">Академија за маркетинг<span class="sr-only">(current)</span></a>
+    <div class="container-fluid bgDiv pt-5 px-3">
+        <nav class="navbar navbar-expand-lg border-bottom border-top-0 border-left-0 border-right-0">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="100"></a>
+    <ul class="navbar-nav m-auto text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5 px-0" href="http://codepreneurs.co/" target="_blank">Академија за програмирање</a>
+                    <a class="nav-link" href="#">bikes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5 px-0" href="https://datascience.brainster.co/" target="_blank">Академија за data science</a>
+                    <a class="nav-link" href="#">gear</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5 px-0" href="https://design.brainster.co/" target="_blank">Академија за дизајн</a>
+                    <a class="nav-link" href="#">parts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">tires</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">service-info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">catalogues</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
                 </li>
             </ul>
-
-            <a href="vraboti-nash-student.html"><button type="button" class="btn btn-color my-2 my-sm-0 text-white">Вработи наш студент</button></a>
-
+            <a href="#"><i class="fas fa-search icon1"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag icon2"></i></a>
+            </nav>
+        <div class="row">
+            <div class="col">
+                <div class="border-bottom border-top-0 border-left-0 border-right-0 py-3">
+                    <p class="h1 mb-0">Bikes</p>
+                </div>
+            </div>
         </div>
-
-
-    </nav>
-
-
-
-    <!-- Banner -->
-    <div class="container-fluid bg-image">
-        <div class="row dark">
-            <div class="col d-flex align-items-center justify-content-center">
-                <h1 class="text-white naslov">Brainster Labs</h1>
+        <div class="row pt-5 filters">
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col">
+                        <p class="h4">Filter by:</p>
+                        <div class="border-bottom border-top-0 border-left-0 border-right-0 py-4 show">
+                            <a href="javascript:void()" class="d-flex justify-content-between"><span> Show all</span><span class="badge badge-pill">0</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="h4 pt-4">Gender</p>
+                        <div class="border-bottom border-top-0 border-left-0 border-right-0 py-4 gender">
+                            <a href="javascript:void()" class="d-flex justify-content-between link"><span>Male</span> <span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pt-2 link"><span>Female</span><span class="badge badge-pill">0</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="h4 pt-4">Brand</p>
+                        <div class="py-4 brand">
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>LE GRAND BIKES</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>KROSS</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>EXPLORER</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>VISITOR</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>PONY</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>FORCE</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between pb-2 link"><span>E-BIKES</span><span class="badge badge-pill">0</span></a>
+                            <a href="javascript:void()" class="d-flex justify-content-between link"><span>IDEAL</span><span class="badge badge-pill">0</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row bike">
+                </div>
+            </div>
+        </div>
+        <div class="row py-5 social-media">
+            <div class="col-lg-3 social-share">
+                <p class="h4 pb-4">Social share</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-3">
+                <div class="border border-top-0 border-bottom-0 border-right-0">
+                    <p class="h4 pb-4 mb-0 ml-3">Event info</p>
+                    <p class="footer-paragraph ml-3"><a href="#">Enter Now</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Event Info</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Course Maps</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Race Pack</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">FAQs</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Am I Registered?</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="border border-top-0 border-bottom-0 border-right-0">
+                    <p class="h4 pb-4 mb-0 ml-3">Registration</p>
+                    <p class="footer-paragraph ml-3"><a href="#">Valunteers</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Gallery</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Press</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Privacy Policy</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Service Plus</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Contacts</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="border border-top-0 border-bottom-0 border-right-0">
+                    <p class="h4 pb-4 mb-0 ml-3">Schedule</p>
+                    <p class="footer-paragraph ml-3"><a href="#">Galery</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">About</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Videos</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">FAQs</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Results</a></p>
+                    <p class="footer-paragraph ml-3"><a href="#">Valunteers</a></p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Projects -->
-    <div class="container-fluid">
-        <form>
-            <div class="row">
-                <div class="col-lg-4 col-12 bg-project">
-                    <label for="show-marketing" class="container">Проекти на студенти по академијата за маркетинг
-                    <input type="checkbox" id="show-marketing">
-                    <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="col-lg-4 col-12 bg-project">
-                    <label for="show-programming" class="container">Проекти на студенти по академијата за програмирање
-                    <input type="checkbox" id="show-programming">
-                    <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="col-lg-4 col-12 bg-project">
-                    <label for="show-design" class="container">Проекти на студенти по академијата за дизајн
-                    <input type="checkbox" id="show-design">
-                    <span class="checkmark"></span>
-                    </label>
-                </div>
-            </div>
-        </form>
-
-    </div>
-    <!-- Cards -->
-    <div class="container-fluid bg-color ">
-        <div class="row py-4 ">
-            <div class="col text-md-center text-left">
-                <h2 class="cards-naslov ">Проекти</h2>
-            </div>
-        </div>
-        <div class="row padding ">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="row pb-4 ">
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards marketing">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img1.jpg " alt="Card image1 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Маркетинг</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards marketing">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img2.jpg " alt="Card image2 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Маркетинг</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards marketing">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img15.jpg " alt="Card image3 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Маркетинг</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards marketing">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img4.jpg " alt="Card image4 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Маркетинг</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards marketing">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img5.jpg " alt="Card image5 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Маркетинг</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards marketing">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img16.jpg " alt="Card image6 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Маркетинг</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img8.jpg " alt="Card image7 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img9.jpg " alt="Card image8 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img17.jpg " alt="Card image9 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img11.jpg " alt="Card image10 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img12.jpg " alt="Card image11 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img13.jpg " alt="Card image12 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img14.jpg " alt="Card image13 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img10.jpg " alt="Card image14 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img3.jpg " alt="Card image15 " height="200 ">
-                                <div class=" card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards programming">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top" src="images/img7.jpg" alt="Card image16" height="200">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Програмирање</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4  cards design">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img18.jpg " alt="Card image17 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Дизајн</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 cards design">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img19.jpg " alt="Card image18 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Дизајн</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mb-md-0 mb-4 cards design">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img20.jpg " alt="Card image19 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Дизајн</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="# " class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 cards design">
-                        <a href="#" class="card-link stretched-link">
-                            <div class="card">
-                                <img class="card-img-top " src="images/img21.jpg " alt="Card image20 " height="200 ">
-                                <div class="card-body ">
-                                    <span class="card-title py-1 px-2 ">Академија за Дизајн</span>
-                                    <div class="card-text ">
-                                        <p class="name-of-project mt-3 mb-2 ">Име на проектот стои овде во две линии</p>
-                                        <p class="description mb-2 ">Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
-                                        <span class="month ">Април - Октомври 2019</span>
-                                    </div>
-                                    <div class="text-right mt-4 ">
-                                        <a href="#" class="btn btn-card text-white px-4 ">Дознај повеќе</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <button id="load-more" class="btn btn-card text-white">Повеќе</button>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- Footer -->
-    <div class="container-fluid ">
-        <div class="row bg-footer ">
-            <div class="col text-center py-3 ">
-                <p class="text-white mb-0 text-footer ">Изработено со <i class="fas fa-heart icon-footer "></i> од студентите на Brainster</p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Latest Font-Awesome CDN -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-
-    <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "100%";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-    </script>
-    <script>
-        document.querySelector("#show-programming").addEventListener("change", showProgrammingCards);
-        document.querySelector("#show-design").addEventListener("change", showDesignCards);
-        document.querySelector("#show-marketing").addEventListener("change", showMarketingCards);
-
-        function showProgrammingCards() {
-
-            document.querySelector("#show-design").checked = false;
-            document.querySelector("#show-marketing").checked = false;
-
-            var allCards = document.querySelectorAll(".cards");
-            allCards.forEach(function(cards) {
-                cards.style.display = 'none';
-            });
-            if (document.querySelector("#show-programming").checked) {
-
-                var programmingCards = document.querySelectorAll(".programming");
-                programmingCards.forEach(function(programmingCard) {
-                    programmingCard.style.display = 'inline-block';
-                });
-            } else {
-                var allCards = document.querySelectorAll('.cards');
-                allCards.forEach(function(cards) {
-                    cards.style.display = 'inline-block'
-                });
-            }
-        }
-
-        function showDesignCards() {
-
-            document.querySelector("#show-programming").checked = false;
-            document.querySelector("#show-marketing").checked = false;
-
-            var allCards = document.querySelectorAll(".cards");
-            allCards.forEach(function(cards) {
-                cards.style.display = 'none';
-            });
-            if (document.querySelector("#show-design").checked) {
-
-                var designCards = document.querySelectorAll(".design");
-                designCards.forEach(function(designCard) {
-                    designCard.style.display = 'inline-block';
-                });
-            } else {
-                var allCards = document.querySelectorAll('.cards');
-                allCards.forEach(function(cards) {
-                    cards.style.display = 'inline-block'
-                });
-            }
-        }
-
-        function showMarketingCards() {
-
-            document.querySelector("#show-design").checked = false;
-            document.querySelector("#show-programming").checked = false;
-
-            var allCards = document.querySelectorAll(".cards");
-            allCards.forEach(function(cards) {
-                cards.style.display = 'none';
-            });
-            if (document.querySelector("#show-marketing").checked) {
-
-                var marketingCards = document.querySelectorAll(".marketing");
-                marketingCards.forEach(function(marketingCard) {
-                    marketingCard.style.display = 'inline-block';
-                });
-            } else {
-                var allCards = document.querySelectorAll('.cards');
-                allCards.forEach(function(cards) {
-                    cards.style.display = 'inline-block'
-                });
-            }
-        }
-        document.querySelector("#load-more").addEventListener("click", loadMoreCards);
-
-        function loadMoreCards() {
-            var allCards = document.querySelectorAll(".cards");
-            var cardsShownAfterClick = 0;
-            allCards.forEach(function(cards) {
-                var allCssProps = window.getComputedStyle(cards);
-                if (allCssProps.display == 'none') {
-                    if (cardsShownAfterClick < 6) {
-                        cards.style.display = 'inline-block';
-                        cardsShownAfterClick = cardsShownAfterClick + 1;
-                    }
-                }
-            });
-
-            var allCards = document.querySelectorAll(".cards");
-            var numberOfHiddenCards = 0;
-            allCards.forEach(function(cards) {
-                var allCssProps = window.getComputedStyle(cards);
-                if (allCssProps.display == 'none') {
-                    numberOfHiddenCards = numberOfHiddenCards + 1;
-                }
-            });
-            if (numberOfHiddenCards == 0) {
-                document.querySelector("#load-more").style.display = 'none';
-            }
-        }
-        var element = document.querySelector("#show-programming");
-        console.log(window.getComputedStyle(element));
-    </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
