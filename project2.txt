@@ -1,0 +1,3 @@
+Ultimate CV Checklist
+
+The goal of the project was to develop a web solution that the user can use to create his own CV, to improve his Linkedin profile and to set up a profile on WeAreLaika. Rezolucija 1920 x 1080
