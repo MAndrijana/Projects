@@ -60,7 +60,8 @@ btnCV.addEventListener("click", function () {
       });
     }
     else {
-      alert("Fill all sections in the CV builder");
+      btnDownload.setAttribute("data-toggle","tooltip");
+      btnDownload.setAttribute("title","Fill all sections in the CV builder"); 
     }
   }
   btnDownload.addEventListener("click", function () {
@@ -68,7 +69,8 @@ btnCV.addEventListener("click", function () {
       generatePDF();
     }
     else {
-      alert("Check Linkedin and WeAreLaika.com fields before downloading the CV")
+      btnDownload.setAttribute("data-toggle","tooltip");
+      btnDownload.setAttribute("title","Check Linkedin and WeAreLaika.com fields before downloading the CV"); 
     }
   })
 })
